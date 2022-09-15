@@ -60,9 +60,9 @@
                 var lat = Math.round(coord.lat);
                 var lng = Math.round(coord.lng);
                 console.log("You clicked the map at " + lng + "," + lat);
-                if (theMarker != undefined)
-                    map.removeLayer(theMarker);
-                theMarker = L.marker([lat,lon]).addTo(map);  
+                if (coordMarker != undefined)
+                    map.removeLayer(coordMarker);
+                coordMarker = L.marker([lat,lon]).addTo(map);  
             });
             var bounds = [[-2042, -2990], [2618, 2861]];
             var image = L.imageOverlay('map.png', bounds).addTo(map);
