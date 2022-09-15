@@ -186,6 +186,12 @@
     "y": 476
   },
   {
+    "name": "Edric MiniBoss",
+    "type": "point_of_interest",
+    "x": -2002,
+    "y": 487
+  },
+  {
     "name": "Minax Base",
     "type": "point_of_interest",
     "x": -1399,
@@ -328,5 +334,17 @@
     "type": "town",
     "x": -673,
     "y": -882
+  },
+  {
+    "name": "Arcadion MiniBoss",
+    "type": "point_of_interest",
+    "x": -934,
+    "y": 2271
+  },
+  {
+    "name": "Burzum MiniBoss",
+    "type": "point_of_interest",
+    "x": -1440,
+    "y": 235
   }
 ]
