@@ -298,5 +298,11 @@
     "type": "point_of_interest",
     "x": 212,
     "y": 2523
+  },
+  {
+    "name": "Destard",
+    "type": "dungeon",
+    "x": -1638,
+    "y": -719
   }
 ]
