@@ -1,0 +1,176 @@
+[
+  {
+    "name": "Wrong",
+    "type": "dungeon",
+    "x": -525,
+    "y": 2299
+  },
+  {
+    "name": "Cove Graveyard",
+    "type": "graveyard",
+    "x": -29,
+    "y": 1213
+  },
+  {
+    "name": "Cove",
+    "type": "town",
+    "x": -269,
+    "y": 1072
+  },
+  {
+    "name": "Chaos",
+    "type": "point_of_interest",
+    "x": -1201,
+    "y": 1470
+  },
+  {
+    "name": "Cotton Fields",
+    "type": "point_of_interest",
+    "x": -1599,
+    "y": 530
+  },
+  {
+    "name": "Minoc Mines",
+    "type": "point_of_interest",
+    "x": 169,
+    "y": 1973
+  },
+  {
+    "name": "Orc Fort",
+    "type": "point_of_interest",
+    "x": -358,
+    "y": 868
+  },
+  {
+    "name": "Compassion",
+    "type": "point_of_interest",
+    "x": -750,
+    "y": 1488
+  },
+  {
+    "name": "Covetous",
+    "type": "dungeon",
+    "x": 40,
+    "y": 1428
+  },
+  {
+    "name": "Britain Graveyard",
+    "type": "graveyard",
+    "x": -1366,
+    "y": 738
+  },
+  {
+    "name": "Buccaneer's Den",
+    "type": "town",
+    "x": 295,
+    "y": -146
+  },
+  {
+    "name": "Vesper Graveyard",
+    "type": "graveyard",
+    "x": 365,
+    "y": 1497
+  },
+  {
+    "name": "Britain",
+    "type": "town",
+    "x": -1206,
+    "y": 503
+  },
+  {
+    "name": "Yew Graveyard",
+    "type": "graveyard",
+    "x": -2168,
+    "y": 1183
+  },
+  {
+    "name": "Despise",
+    "type": "dungeon",
+    "x": -1448,
+    "y": 1229
+  },
+ {
+    "name": "Ice",
+    "type": "dungeon",
+    "x": -584,
+    "y": 2469
+  },
+  {
+    "name": "Buccaneer's Den Moongate",
+    "type": "moongate",
+    "x": 347,
+    "y": -206
+  },
+  {
+    "name": "Hedge Maze",
+    "type": "point_of_interest",
+    "x": -1643,
+    "y": -205
+  },
+  {
+    "name": "Yew Moongate",
+    "type": "moongate",
+    "x": -2110,
+    "y": 1643
+  },
+  {
+    "name": "Thief",
+    "type": "thieves_guild",
+    "x": -1188,
+    "y": 591
+  },
+  {
+    "name": "Minoc Moongate",
+    "type": "moongate",
+    "x": 297,
+    "y": 1716
+  },
+  {
+    "name": "Buccaneer's Den Archway",
+    "type": "moongate",
+    "x": 322,
+    "y": -84
+  },
+  {
+    "name": "Minoc",
+    "type": "town",
+    "x": 0,
+    "y": 1957
+  },
+  {
+    "name": "Justice",
+    "type": "point_of_interest",
+    "x": -1448,
+    "y": 1794
+  },
+  {
+    "name": "Swamp",
+    "type": "point_of_interest",
+    "x": -539,
+    "y": 1324
+  },
+ {
+    "name": "Britain Moongate",
+    "type": "moongate",
+    "x": -1398,
+    "y": 86
+  },
+  {
+    "name": "Shame",
+    "type": "dungeon",
+    "x": -2423,
+    "y": 605
+  },
+  {
+    "name": "Yew",
+    "type": "town",
+    "x": -2409,
+    "y": 1324
+  },
+  {
+    "name": "Archway",
+    "type": "moongate",
+    "x": 190,
+    "y": 1352
+  }
+]
