@@ -18,7 +18,7 @@
     "y": 1072
   },
   {
-    "name": "Chaos",
+    "name": "Chaos Shrine",
     "type": "point_of_interest",
     "x": -1201,
     "y": 1470
@@ -42,7 +42,7 @@
     "y": 868
   },
   {
-    "name": "Compassion",
+    "name": "Compassion Shrine",
     "type": "point_of_interest",
     "x": -750,
     "y": 1488
@@ -132,7 +132,7 @@
     "y": 1957
   },
   {
-    "name": "Justice",
+    "name": "Justice Shrine",
     "type": "point_of_interest",
     "x": -1448,
     "y": 1794
@@ -162,7 +162,7 @@
     "y": 1324
   },
   {
-    "name": "Archway",
+    "name": "Buccaneer's Den Archway",
     "type": "moongate",
     "x": 190,
     "y": 1352
@@ -172,5 +172,41 @@
     "type": "point_of_interest",
     "x": -2187,
     "y": 460
+  },
+  {
+    "name": "Skara Brea",
+    "type": "town",
+    "x": -2312,
+    "y": 153
+  },
+  {
+    "name": "Bandit Camp",
+    "type": "point_of_interest",
+    "x": -2004,
+    "y": 476
+  },
+  {
+    "name": "Minax Base",
+    "type": "point_of_interest",
+    "x": -1399,
+    "y": -395
+  },
+  {
+    "name": "Wind Drakes",
+    "type": "point_of_interest",
+    "x": -1326,
+    "y": 1411
+  },
+  {
+    "name": "Talornia MiniBoss",
+    "type": "point_of_interest",
+    "x": -6,
+    "y": 1105
+  },
+  {
+    "name": "Gorgan's Castle",
+    "type": "point_of_interest",
+    "x": -1634,
+    "y": 1012
   }
 ]
