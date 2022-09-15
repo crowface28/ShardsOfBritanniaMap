@@ -346,5 +346,30 @@
     "type": "point_of_interest",
     "x": -1440,
     "y": 235
+  },
+  {
+    "name": "Lycaeum",
+    "type": "point_of_interest",
+    "x": 2300,
+    "y": 1354
+  },
+  {
+    "name": "Moonglow Moongate",
+    "type": "moongate",
+    "x": 2488,
+    "y": 987
+  },
+  {
+    "name": "Moonglow Graveyard",
+    "type": "graveyard",
+    "x": 2595,
+    "y": 934
+  },
+  {
+    "name": "Moonglow Zoo",
+    "type": "point_of_interest",
+    "x": 2544,
+    "y": 867
   }
+
 ]
