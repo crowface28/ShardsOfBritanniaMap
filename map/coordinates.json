@@ -177,7 +177,7 @@
     "name": "Skara Brea",
     "type": "town",
     "x": -2312,
-    "y": 153
+    "y": -153
   },
   {
     "name": "Bandit Camp",
@@ -208,5 +208,23 @@
     "type": "point_of_interest",
     "x": -1634,
     "y": 1012
+  },
+  {
+    "name": "Yew Lizardmen",
+    "type": "point_of_interest",
+    "x": -2895,
+    "y": 725
+  },
+  {
+    "name": "Buccs Lizardmen",
+    "type": "point_of_interest",
+    "x": 335,
+    "y": 119
+  },
+  {
+    "name": "Moonglow",
+    "type": "town",
+    "x": 2486,
+    "y": 1138
   }
 ]
