@@ -158,8 +158,8 @@
   {
     "name": "Yew",
     "type": "town",
-    "x": -2409,
-    "y": 1324
+    "x": -2276,
+    "y": 1520
   },
   {
     "name": "Buccaneer's Den Archway",
@@ -254,8 +254,8 @@
   {
     "name": "Samlethe Pass",
     "type": "point_of_interest",
-    "x": -912,
-    "y": 1460
+    "x": -1000,
+    "y": 1392
   },
   {
     "name": "Spiritwood Outpost",
@@ -280,5 +280,23 @@
     "type": "point_of_interest",
     "x": 2393,
     "y": 1811
+  },
+  {
+    "name": "Compassion Desert",
+    "type": "point_of_interest",
+    "x": -663,
+    "y": 1499
+  },
+  {
+    "name": "Elemental Boss",
+    "type": "point_of_interest",
+    "x": -773,
+    "y": 1393
+  },
+  {
+    "name": "Dread Spiders",
+    "type": "point_of_interest",
+    "x": 212,
+    "y": 2523
   }
 ]
