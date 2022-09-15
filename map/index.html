@@ -9,6 +9,9 @@
         crossorigin=""></script>
         
         <style>
+            button {
+                    width: 100px;
+                }
             .logoImg {
                 width: 20%;
             }
@@ -42,8 +45,13 @@
 
     </head>
     <body>
-        <div class="header"><img class="header logoImg" src="sobLogo.png"></img>
-</div>
+        <div class="header"><img class="header logoImg" src="sobLogo.png"></img></div>
+        <div class="btn-group">
+            <button type="button" id="all" class="btn btn-success">All</button>
+            <button type="button" id="town" class="btn btn-primary">Towns</button>
+            <button type="button" id="dungeon" class="btn btn-danger">Dungeons</button>
+            <button type="button" id="poi" class="btn btn-danger">Points of Interest</button>
+        </div>
         <div id="map"></div>
         <script>
             
@@ -99,22 +107,34 @@
                 //var north = L.marker(xy([-530, 2569])).addTo(map);
                 //var south = L.marker(xy([-388, -1960])).addTo(map);
 
+                var towns = [], moongates = [], dungeons = [], pois = [], graveyards = [];
                 for(let i = 0; i < coords.length; i++) {
                     if (coords[i].type == 'town')
-                        L.marker(xy([coords[i].x, coords[i].y]), townMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
+                        //L.marker(xy([coords[i].x, coords[i].y]), townMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
+                        towns.push(L.marker(xy([coords[i].x, coords[i].y]), townMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'}));
                     else if (coords[i].type == 'moongate')
-                        L.marker(xy([coords[i].x, coords[i].y]), moongateMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
+                        //L.marker(xy([coords[i].x, coords[i].y]), moongateMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
+                        moongates.push(L.marker(xy([coords[i].x, coords[i].y]), moongateMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'}));
                     else if (coords[i].type == 'dungeon')
-                        L.marker(xy([coords[i].x, coords[i].y]), dungeonMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
+                        //L.marker(xy([coords[i].x, coords[i].y]), dungeonMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
+                        dungeons.push(L.marker(xy([coords[i].x, coords[i].y]), dungeonMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'}));
                     else if (coords[i].type == 'point_of_interest')
-                        L.marker(xy([coords[i].x, coords[i].y]), poiMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
+                        //L.marker(xy([coords[i].x, coords[i].y]), poiMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
+                        pois.push(L.marker(xy([coords[i].x, coords[i].y]), poiMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'}));
                     else if (coords[i].type == 'graveyard')
-                        L.marker(xy([coords[i].x, coords[i].y]), gyMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
+                        //L.marker(xy([coords[i].x, coords[i].y]), gyMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
+                        graveyards.push(L.marker(xy([coords[i].x, coords[i].y]), gyMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'}))
                     else
                         console.log(coords[i])
-                        //L.marker(xy([coords[i].x, coords[i].y]) ).addTo(map).bindTooltip(coords[i].name, {permanent: false, direction: 'top'});
-                    
                 }
+                var townsLM = L.layerGroup(towns);
+                var moongatesLM = L.layerGroup(moongates);
+                var dungeonsLM = L.layerGroup(dungeons);
+                var poisLM = L.layerGroup(pois);
+                var graveyardsLM = L.layerGroup(graveyards);
+
+                var overlapMaps = {"Towns": townsLM, "Moongates":moongatesLM, "Dungeons":dungeonsLM, "POIs":poisLM, "Graveyards":graveyardsLM}
+                var layerControl = L.control.layers(overlayMaps).addTo(map);
             }
         </script>
     </body>
