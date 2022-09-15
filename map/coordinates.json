@@ -304,5 +304,29 @@
     "type": "dungeon",
     "x": -1638,
     "y": -719
+  },
+  {
+    "name": "Swamp Wyverns",
+    "type": "point_of_interest",
+    "x": -1570,
+    "y": -899
+  },
+  {
+    "name": "Savage Camp",
+    "type": "point_of_interest",
+    "x": -1629,
+    "y": -1106
+  },
+  {
+    "name": "Vesper? :(",
+    "type": "town",
+    "x": 545,
+    "y": 1516
+  },
+  {
+    "name": "Trinsic? :(",
+    "type": "town",
+    "x": -673,
+    "y": -882
   }
 ]
