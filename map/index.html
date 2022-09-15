@@ -9,9 +9,6 @@
         crossorigin=""></script>
         
         <style>
-            button {
-                    width: 100px;
-                }
             .logoImg {
                 width: 20%;
             }
@@ -46,12 +43,7 @@
     </head>
     <body>
         <div class="header"><img class="header logoImg" src="sobLogo.png"></img></div>
-        <div class="btn-group">
-            <button type="button" id="all" class="btn btn-success">All</button>
-            <button type="button" id="town" class="btn btn-primary">Towns</button>
-            <button type="button" id="dungeon" class="btn btn-danger">Dungeons</button>
-            <button type="button" id="poi" class="btn btn-danger">Points of Interest</button>
-        </div>
+        
         <div id="map"></div>
         <script>
             
@@ -133,7 +125,7 @@
                 var poisLM = L.layerGroup(pois);
                 var graveyardsLM = L.layerGroup(graveyards);
 
-                var overlapMaps = {"Towns": townsLM, "Moongates":moongatesLM, "Dungeons":dungeonsLM, "POIs":poisLM, "Graveyards":graveyardsLM}
+                var overlayMaps = {"Towns": townsLM, "Moongates":moongatesLM, "Dungeons":dungeonsLM, "POIs":poisLM, "Graveyards":graveyardsLM}
                 var layerControl = L.control.layers(overlayMaps).addTo(map);
             }
         </script>
