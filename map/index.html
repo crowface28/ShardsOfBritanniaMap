@@ -72,15 +72,15 @@
 
                 for(let i = 0; i < coords.length; i++) {
                     if (coords[i].type == 'town')
-                        L.marker(xy([coords[i].x, coords[i].y]), townMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'lou-tooltip'});
+                        L.marker(xy([coords[i].x, coords[i].y]), townMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
                     else if (coords[i].type == 'moongate')
-                        L.marker(xy([coords[i].x, coords[i].y]), moongateMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'lou-tooltip'});
+                        L.marker(xy([coords[i].x, coords[i].y]), moongateMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
                     else if (coords[i].type == 'dungeon')
-                        L.marker(xy([coords[i].x, coords[i].y]), dungeonMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'lou-tooltip'});
+                        L.marker(xy([coords[i].x, coords[i].y]), dungeonMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
                     else if (coords[i].type == 'point_of_interest')
-                        L.marker(xy([coords[i].x, coords[i].y]), poiMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'lou-tooltip'});
+                        L.marker(xy([coords[i].x, coords[i].y]), poiMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
                     else if (coords[i].type == 'graveyard')
-                        L.marker(xy([coords[i].x, coords[i].y]), gyMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'lou-tooltip'});
+                        L.marker(xy([coords[i].x, coords[i].y]), gyMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'sob-tooltip'});
                     else
                         console.log(coords[i])
                         //L.marker(xy([coords[i].x, coords[i].y]) ).addTo(map).bindTooltip(coords[i].name, {permanent: false, direction: 'top'});
