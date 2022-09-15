@@ -54,18 +54,13 @@
             var image = L.imageOverlay('map2.png', bounds).addTo(map);
             map.fitBounds(bounds);
 
-            /*const coordsUrl = "http://hollythedog.net/coords.json"
+            const coordsUrl = "coords.json"
             const fetchPromise = fetch(coordsUrl);
             fetchPromise
                 .then((response) => response.json())
                 .then((data) => {
                     loadCoords(data);
                 });
-                */
-            const fs = require('fs');
-            var coords = JSON.parse(fs.readFileSync("coords.json"));
-            loadCoords(coords);
-
             function loadCoords(coords)
             {
                 //var west = L.marker(xy([-2921, 729])).addTo(map);
