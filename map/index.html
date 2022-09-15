@@ -54,7 +54,7 @@
             var image = L.imageOverlay('map.png', bounds).addTo(map);
             map.fitBounds(bounds);
 
-            const coordsUrl = "map/coords.json"
+            const coordsUrl = "coordinates.json"
             const fetchPromise = fetch(coordsUrl);
             fetchPromise
                 .then((response) => response.json())
