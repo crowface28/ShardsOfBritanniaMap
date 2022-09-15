@@ -29,10 +29,12 @@
             var moongateIcon = L.icon({iconUrl: 'moongate.png',iconSize: [12, 23]});
             var dungeonIcon = L.icon({iconUrl: 'dungeon.png',iconSize: [15, 15]});
             var poiIcon = L.icon({iconUrl: 'poi.png',iconSize: [15, 10]});
+            var gyIcon = L.icon({iconUrl: 'gy.png',iconSize: [15, 15]});
             var townMarkerOptions = {title: "town",icon: townIcon};
             var moongateMarkerOptions = {title: "moongate",icon: moongateIcon};
             var dungeonMarkerOptions = {title: "dungeon",icon: dungeonIcon};
             var poiMarkerOptions = {title: "poi",icon: poiIcon};
+            var gyMarkerOptions = {title: "gy",icon: gyIcon};
 
             var yx = L.latLng;
             var xy = function(x, y) {
@@ -77,6 +79,8 @@
                         L.marker(xy([coords[i].x, coords[i].y]), dungeonMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'lou-tooltip'});
                     else if (coords[i].type == 'point_of_interest')
                         L.marker(xy([coords[i].x, coords[i].y]), poiMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'lou-tooltip'});
+                    else if (coords[i].type == 'graveyard')
+                        L.marker(xy([coords[i].x, coords[i].y]), gyMarkerOptions ).addTo(map).bindTooltip(coords[i].name, {permanent: true, direction: 'top', className: 'lou-tooltip'});
                     else
                         console.log(coords[i])
                         //L.marker(xy([coords[i].x, coords[i].y]) ).addTo(map).bindTooltip(coords[i].name, {permanent: false, direction: 'top'});
