@@ -166,5 +166,11 @@
     "type": "moongate",
     "x": 190,
     "y": 1352
+  },
+  {
+    "name": "Bridge",
+    "type": "point_of_interest",
+    "x": -2173,
+    "y": 458
   }
 ]
