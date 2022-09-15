@@ -62,7 +62,7 @@
                     loadCoords(data);
                 });
                 */
-            
+            const fs = require('fs');
             var coords = JSON.parse(fs.readFileSync("coords.json"));
             loadCoords(coords);
 
