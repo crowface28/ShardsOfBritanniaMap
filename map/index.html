@@ -119,13 +119,14 @@
                     else
                         console.log(coords[i])
                 }
+                var allLM = L.layerGroup(towns + moongates + dungeons + pois + graveyards);
                 var townsLM = L.layerGroup(towns);
                 var moongatesLM = L.layerGroup(moongates);
                 var dungeonsLM = L.layerGroup(dungeons);
                 var poisLM = L.layerGroup(pois);
                 var graveyardsLM = L.layerGroup(graveyards);
 
-                var overlayMaps = {"Towns": townsLM, "Moongates":moongatesLM, "Dungeons":dungeonsLM, "POIs":poisLM, "Graveyards":graveyardsLM}
+                var overlayMaps = {"All":allLM, "Towns": townsLM, "Moongates":moongatesLM, "Dungeons":dungeonsLM, "POIs":poisLM, "Graveyards":graveyardsLM}
                 var layerControl = L.control.layers(overlayMaps).addTo(map);
             }
         </script>
