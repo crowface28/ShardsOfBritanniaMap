@@ -52,11 +52,17 @@
 
 
             var map = L.map('map', {crs: L.CRS.Simple, center: [0,0], minZoom: -2});
-            map.on('click', function(e){
-            var coord = e.latlng;
-            var lat = coord.lat;
-            var lng = coord.lng;
-            console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
+
+            var coordMarker = {};
+            map.on('click', function(e)
+            {
+                var coord = e.latlng;
+                var lat = Math.round(coord.lat);
+                var lng = Math.round(coord.lng);
+                console.log("You clicked the map at " + lng + "," + lat);
+                if (theMarker != undefined)
+                    map.removeLayer(theMarker);
+                theMarker = L.marker([lat,lon]).addTo(map);  
             });
             var bounds = [[-2042, -2990], [2618, 2861]];
             var image = L.imageOverlay('map.png', bounds).addTo(map);
