@@ -51,10 +51,10 @@
             console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
             });
             var bounds = [[-2042, -2990], [2618, 2861]];
-            var image = L.imageOverlay('map2.png', bounds).addTo(map);
+            var image = L.imageOverlay('map.png', bounds).addTo(map);
             map.fitBounds(bounds);
 
-            const coordsUrl = "coords.json"
+            const coordsUrl = "map/coords.json"
             const fetchPromise = fetch(coordsUrl);
             fetchPromise
                 .then((response) => response.json())
