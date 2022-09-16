@@ -370,6 +370,18 @@
     "type": "point_of_interest",
     "x": 2544,
     "y": 867
+  },
+  {
+    "name": "Compassion Crossroads",
+    "type": "point_of_interest",
+    "x": -498,
+    "y": 1578
+  },
+  {
+    "name": "Super Annoying Density of Crappy Mobs",
+    "type": "point_of_interest",
+    "x": -498,
+    "y": 1578
   }
 
 ]
