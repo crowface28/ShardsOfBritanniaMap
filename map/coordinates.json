@@ -382,6 +382,12 @@
     "type": "point_of_interest",
     "x": -588,
     "y": 693
+  },
+  {
+    "name": "Skara Brea Moongate",
+    "type": "moongate",
+    "x": -2254,
+    "y": -25
   }
 
 ]
