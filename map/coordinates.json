@@ -412,5 +412,17 @@
     "type": "point_of_interest",
     "x": -2138,
     "y": 833
+  },
+  {
+    "name": "Guard Tower",
+    "type": "point_of_interest",
+    "x": -2168,
+    "y": 737
+  },
+  {
+    "name": "Orc Camp",
+    "type": "point_of_interest",
+    "x": -2249,
+    "y": 723
   }
 ]
