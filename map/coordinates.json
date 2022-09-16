@@ -424,5 +424,11 @@
     "type": "point_of_interest",
     "x": -2249,
     "y": 723
+  },
+  {
+    "name": "Yew Crypts",
+    "type": "dungeon",
+    "x": -1890,
+    "y": 1642
   }
 ]
