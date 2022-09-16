@@ -406,5 +406,11 @@
     "type": "town",
     "x": 1524,
     "y": -91
+  },
+  {
+    "name": "Flain MiniBoss",
+    "type": "point_of_interest",
+    "x": -2138,
+    "y": 833
   }
 ]
