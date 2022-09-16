@@ -430,5 +430,11 @@
     "type": "dungeon",
     "x": -1890,
     "y": 1642
+  },
+  {
+    "name": "Stone of Time",
+    "type": "point_of_interest",
+    "x": -1482,
+    "y": -489
   }
 ]
