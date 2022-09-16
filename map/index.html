@@ -158,6 +158,22 @@
 
                 var overlayMaps = {"All":allLM, "Towns": townsLM, "Moongates":moongatesLM, "Dungeons":dungeonsLM, "POIs":poisLM, "Graveyards":graveyardsLM}
                 var layerControl = L.control.layers(null, overlayMaps).addTo(map);
+
+                // boat map
+                var pointA = new L.LatLng(-2,-1115);
+                var pointB = new L.LatLng(254, -879);
+                var pointC = new L.LatLng(254, 655);
+                var pointD = new L.LatLng(1319, 655);
+                var pointE = new L.LatLng(1319, 435);
+                var pointList = [pointA, pointB, pointC, pointD, pointE];
+
+                var firstpolyline = new L.Polyline(pointList, {
+                    color: 'green',
+                    weight: 2,
+                    opacity: 0.8,
+                    smoothFactor: 1
+                });
+                firstpolyline.addTo(map);
             }
         </script>
     </body>
