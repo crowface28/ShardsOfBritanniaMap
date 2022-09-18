@@ -436,5 +436,11 @@
     "type": "point_of_interest",
     "x": -1482,
     "y": -489
+  },
+  {
+    "name": "Guardpost",
+    "type": "point_of_interest",
+    "x": -235,
+    "y": 1427
   }
 ]
