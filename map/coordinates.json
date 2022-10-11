@@ -174,7 +174,7 @@
     "y": 460
   },
   {
-    "name": "Skara Brea",
+    "name": "Skara Brae",
     "type": "town",
     "x": -2312,
     "y": -153
@@ -384,7 +384,7 @@
     "y": 693
   },
   {
-    "name": "Skara Brea Moongate",
+    "name": "Skara Brae Moongate",
     "type": "moongate",
     "x": -2254,
     "y": -25
@@ -442,5 +442,11 @@
     "type": "point_of_interest",
     "x": -235,
     "y": 1427
+  },
+  {
+    "name": "Skara Brae Graveyard",
+    "type": "graveyard",
+    "x": -2476,
+    "y": -26
   }
 ]
